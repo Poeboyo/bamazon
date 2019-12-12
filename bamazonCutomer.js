@@ -2,29 +2,28 @@
 const inquirer = require("inquirer");
 //Brings in the mySQL Package
 const mysql = require("mysql");
-//Displays Avaibale Items for Sale
-const showProduct = require("./modular-functions/showProduct");
-//Prompts the Customer with a choice of purchase
-const userAction = require("./modular-functions/secondprompt");
 //Connected to Bamazon DataBase
 const connection = require("./modular-functions/connection");
+//UserAction
+const prompts = require("./modular-functions/prompts");
+//Displays Avaibale Items for Sale
+const showProduct = require("./modular-functions/showProduct");
+//Order Validation
+const orderValidation = require("./modular-functions/orderValidation")
 
 //Enables Access to the DataBase
 connection.connect(function(err) {
-  showProduct();
-
   if (err) throw err;
+
   console.log("connected as id " + connection.threadId);
 
   //Prompts User for Item ID
+
   inquirer
-    .prompt({
-      type: "input",
-      name: "customer_id", //Response Collected
-      message: "Please Input the item ID you wish to purchase?"
-    })
+    .prompt(prompts)
     //Response After Answering Prompt
-    .then(answers => {
-      userAction();
-    });
+    .then(answers){
+      orderValidation
+    }
 });
+showProduct();

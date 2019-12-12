@@ -12,9 +12,14 @@ let connection = mysql.createConnection(
     // Your password
     password: "Werewolf00",
     database: "bamazonDB"
-  }
-  // function() {
-  //   console.log("You are connected");
-  // }
+  },
+  console.log(`
+██████╗░░█████╗░███╗░░░███╗░█████╗░███████╗░█████╗░███╗░░██╗
+██╔══██╗██╔══██╗████╗░████║██╔══██╗╚════██║██╔══██╗████╗░██║
+██████╦╝███████║██╔████╔██║███████║░░███╔═╝██║░░██║██╔██╗██║
+██╔══██╗██╔══██║██║╚██╔╝██║██╔══██║██╔══╝░░██║░░██║██║╚████║
+██████╦╝██║░░██║██║░╚═╝░██║██║░░██║███████╗╚█████╔╝██║░╚███║
+╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚══════╝░╚════╝░╚═╝░░╚══╝ not Amazon for Legal Reasons`),
+  console.log(`What's In Stock?`)
 );
 module.exports = connection;
