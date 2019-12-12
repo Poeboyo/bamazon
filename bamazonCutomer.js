@@ -17,7 +17,7 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 
   //Prompts User for Item ID
-  async inquirer
+  inquirer
     .prompt({
       type: "input",
       name: "customer_id", //Response Collected
