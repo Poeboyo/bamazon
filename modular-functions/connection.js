@@ -11,8 +11,10 @@ let connection = mysql.createConnection(
 
     // Your password
     password: "Werewolf00",
-    database: "top_songsDB"
-  },
-  console.log("You are connected")
+    database: "bamazonDB"
+  }
+  // function() {
+  //   console.log("You are connected");
+  // }
 );
 module.exports = connection;
