@@ -17,7 +17,7 @@ connection.connect(function(err) {
   if (err) throw err;
   start();
 });
-
+1;
 function start() {
   inquirer.prompt();
 }
