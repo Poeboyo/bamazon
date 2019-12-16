@@ -1,11 +1,11 @@
 const prompts = [
   {
     type: "input",
-    name: "product_id",
+    name: "item_id",
     message: "Please Input the ID Number of the Item you wish to purchase?",
     validate: function(input) {
       if (!isNaN(input)) {
-        if (input > 0 && input <= products) {
+        if (input > 0 && input <= 9) {
           return true;
         }
       }
