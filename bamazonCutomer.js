@@ -26,8 +26,6 @@ connection.connect(function(err) {
     .prompt(prompts)
     //Response After Answering Prompt
     .then(answers => {
-      console.log(answers);
-
       orderValidation(answers);
     })
     .catch(catchHandler);
