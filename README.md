@@ -4,7 +4,7 @@ Amazon Clone called "Bamazon" for Legal Reasons...
 
 ## How it's Made
 
--Bamazon is a Command Line Application that is powered by a mySQL Database with purchasable items and also by using user input
+- Bamazon is a Command Line Application that is powered by a mySQL Database with purchasable items and also by using user input
 
 - The app connects to a mySQL database, displaying each item in the CLI
 
@@ -47,9 +47,9 @@ connection.connect(function(err) {
 });
 ```
 
--Each piece of code serves one function, each only being rendered when needed/called upon.
--User input is taken in using inquirer and has user validation, making sure the "customer" cannot purchase an item that does not exist.
--A small example is below, a small fraction of an "if" statement, making sure that the item is avaiable for purchase.
+- Each piece of code serves one function, each only being rendered when needed/called upon.
+- User input is taken in using inquirer and has user validation, making sure the "customer" cannot purchase an item that does not exist.
+- A small example is below, a small fraction of an "if" statement, making sure that the item is avaiable for purchase.
 
 ```javascript
 if (stock < 1) {
@@ -63,10 +63,10 @@ if (stock < 1) {
 
 ## Technologies Used
 
--JavaScript
--Node.js
--Inquirer
--MySQL Database
+- JavaScript
+- Node.js
+- Inquirer
+- MySQL Database
 
 ## Difficulties and Learning
 
